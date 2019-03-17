@@ -1,0 +1,45 @@
+.link-ask {
+  display: flex;
+  height: 100px;
+  width: 320px;
+  background-color: $secondColor;
+}
+
+.link-ask__icon {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 32px;
+  width: 100px;
+}
+
+.link-ask__icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.link-ask__text {
+  position: relative;
+  text-decoration: none;
+  width: calc(100% - 100px);
+}
+
+.link-ask__text p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $mainColor;
+  font-size: 14px;
+  line-height: 25px;
+  margin: 0;
+  width: 80%;
+}
+
+.link-ask__text p span {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}

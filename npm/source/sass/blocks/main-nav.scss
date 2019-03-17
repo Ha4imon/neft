@@ -1,0 +1,91 @@
+.main-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height .3s,
+    opacity .5s;
+  max-height: 0;
+  z-index: 10;
+}
+
+.main-nav--active {
+  max-height: 300px;
+  opacity: 1
+}
+
+.main-nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-nav ul li:last-child a {
+  border-bottom: 0;
+}
+
+.main-nav ul li a {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  background-color: $secondColor;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 10px;
+  height: 50px;
+
+  &.active {
+    color: $mainColor;
+  }
+
+  &:hover {
+    color: $mainColor;
+  }
+}
+
+@media (min-width: $laptop) {
+  .main-nav {
+    position: relative;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+    transition: none;
+    max-height: none;
+  }
+
+  .main-nav ul {
+    flex-direction: row;
+  }
+
+  .main-nav ul li:last-child a {
+    margin-right: 0;
+  }
+
+  .main-nav ul li a {
+    background-color: transparent;
+    border-bottom: 3px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    color: $mainColor;
+    margin-right: 5px;
+
+
+    &.active {
+      border-bottom: 3px solid $secondColor;
+      color: $secondColor;
+    }
+
+    &:hover {
+      border-bottom: 3px solid $secondColor;
+      color: $secondColor;
+    }
+  }
+}

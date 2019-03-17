@@ -1,0 +1,16 @@
+.btn {
+  display: inline-block;
+  border: none;
+  background-color: $secondColor;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  
+  &:hover {
+    background-color: $mainColor;
+  }
+}

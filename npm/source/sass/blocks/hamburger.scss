@@ -1,0 +1,39 @@
+.hamburger {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+  margin-left: auto;
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: $mainColor;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px -6px 0px 0px $mainColor,
+      0px 6px 0px 0px $mainColor;
+    width: 80%;
+    height: 2px;
+    transition: all .3s;
+  }
+
+  &:hover::before,
+  &--active::before {
+    background-color: $secondColor;
+    box-shadow: 0px -6px 0px 0px $secondColor,
+      0px 6px 0px 0px $secondColor;
+  }
+}
+
+@media (min-width: $laptop) {
+  .hamburger {
+    display: none;
+  }
+}
