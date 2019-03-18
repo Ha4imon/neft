@@ -66,6 +66,7 @@
   }
 
   .main-nav ul li:last-child a {
+    border-bottom: 3px solid transparent;
     margin-right: 0;
   }
 
@@ -76,6 +77,8 @@
     border-right: 1px solid transparent;
     color: $mainColor;
     margin-right: 5px;
+    transition: border .3s,
+      color .3s;
 
 
     &.active {
