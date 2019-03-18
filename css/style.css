@@ -401,12 +401,13 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 70px; }
+  margin-bottom: 35px; }
 
 .service__item {
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  margin-bottom: 35px;
   width: 100%; }
   .service__item:hover .service__img i {
     background-color: #01B9E6; }
