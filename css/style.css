@@ -212,7 +212,8 @@ html {
   left: 0;
   overflow: hidden;
   opacity: 0;
-  transition: max-height .3s, opacity .5s;
+  transition: max-height .3s,
+ opacity .5s;
   max-height: 0;
   z-index: 10; }
 
@@ -686,7 +687,8 @@ html {
     border-right: 1px solid transparent;
     color: #454545;
     margin-right: 5px;
-    transition: border .3s, color .3s; }
+    transition: border .3s,
+ color .3s; }
     .main-nav ul li a.active {
       border-bottom: 3px solid #01B9E6;
       color: #01B9E6; }
