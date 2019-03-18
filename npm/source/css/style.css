@@ -455,6 +455,39 @@ html {
   text-align: justify;
   margin: 0; }
 
+.about-us-home__text {
+  margin-bottom: 30px; }
+
+.about-us-home__text > p {
+  color: #454545;
+  opacity: 0.9;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 0;
+  margin-bottom: 20px; }
+
+.about-us-home__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%; }
+
+.about-us-home__btn {
+  position: relative; }
+
+.about-us-home__btn i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #454545;
+  font-size: 12px;
+  transition: color .3s; }
+
+.about-us-home__btn:hover i {
+  color: #fff; }
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px; }
@@ -696,7 +729,11 @@ html {
   .hamburger {
     display: none; }
   .service__item {
-    width: 30%; } }
+    width: 30%; }
+  .about-us-home__text {
+    margin-bottom: 0; }
+  .about-us-home__img {
+    padding: 0; } }
 
 @media (min-width: 1200px) {
   .container {

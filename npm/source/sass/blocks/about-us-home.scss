@@ -1,0 +1,48 @@
+.about-us-home {}
+
+.about-us-home__text {
+  margin-bottom: 30px;
+}
+
+.about-us-home__text > p {
+  color: $mainColor;
+  opacity: 0.9;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-us-home__img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.about-us-home__btn {
+  position: relative;
+}
+
+.about-us-home__btn i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $mainColor;
+  font-size: 12px;
+  transition: color .3s;
+}
+
+.about-us-home__btn:hover i {
+  color: #fff;
+}
+
+@media (min-width: $laptop) {
+  .about-us-home__text {
+    margin-bottom: 0;
+  }
+
+  .about-us-home__img {
+    padding: 0;
+  }
+}
