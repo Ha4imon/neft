@@ -1,0 +1,10 @@
+.textarea {
+  border: 1px solid #ddd;
+  font-family: inherit;
+  resize: none;
+  padding: 15px;
+
+  &:focus {
+    border-color: $secondColor;
+  }
+}
