@@ -1,0 +1,98 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__list {
+  display: flex;
+  transition: transform .3s;
+  max-width: 100%;
+}
+
+.carousel__item {
+  display: flex;
+}
+
+.carousel__control {
+  display: flex;
+  position: absolute;
+  right: 25%;
+  bottom: 30px;
+  width: 60px;
+  height: 35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    opacity: 0.5;
+    width: 2px;
+    height: calc(100% - 3px);
+  }
+}
+
+.carousel__btn-left,
+.carousel__btn-right {
+  position: absolute;
+  top: 0;
+  font-size: 0;
+  height: 35px;
+  width: 20px;
+
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 20px;
+    height: 2px;
+    transition: background-color .3s;
+  }
+
+  &::after {
+    top: 25px;
+  }
+
+  &::before {
+    top: 12px;
+  }
+}
+
+.carousel__btn-right {
+  right: 0;
+}
+
+.carousel__btn-left {
+  left: 0;
+}
+
+.carousel__btn-left:hover,
+.carousel__btn-right:hover {
+
+  &::after,
+  &::before {
+    background-color: $secondColor;
+  }
+}
+
+.carousel__btn-left::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.carousel__btn-left::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.carousel__btn-right::after {
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.carousel__btn-right::before {
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
