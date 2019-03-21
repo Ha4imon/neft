@@ -1,3 +1,7 @@
+.about-us-home .title {
+  margin-left: 0;
+}
+
 .about-us-home__text {
   margin-bottom: 30px;
 }
@@ -9,6 +13,10 @@
   line-height: 1.8;
   margin-top: 0;
   margin-bottom: 20px;
+}
+
+.about-us-home__img {
+  align-self: flex-start;
 }
 
 .about-us-home__img img {
@@ -35,12 +43,16 @@
   color: #fff;
 }
 
+.about-us {
+  margin-bottom: 50px;
+}
+
 @media (min-width: $laptop) {
-  .about-us-home__text {
-    margin-bottom: 0;
+  .about-us-home .title {
+    margin-top: 50px;
   }
 
-  .about-us-home__img {
-    padding: 0;
+  .about-us-home__text {
+    margin-bottom: 0;
   }
 }

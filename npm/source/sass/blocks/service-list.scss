@@ -1,0 +1,33 @@
+.service-list .title {
+  display: block;
+  color: $mainColor;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+
+
+.service-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-list ul li:last-child a {
+  border-bottom: none;
+}
+
+.service-list ul li a {
+  display: block;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  color: $mainColor;
+  text-decoration: none;
+  padding: 8px 15px 8px 30px;
+  transition: color .3s;
+  
+  &:hover {
+    color: $secondColor;
+  }
+}

@@ -1,0 +1,25 @@
+.service-content {
+  margin-bottom: 50px;
+}
+.service-content b {
+  color: $mainColor;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.service-content p {
+  color: $mainColor;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.service-content ul {
+  padding-left: 20px;
+  color: $mainColor;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.service-content ul li {
+  margin-bottom: 10px;
+}

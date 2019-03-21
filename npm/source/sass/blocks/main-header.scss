@@ -12,3 +12,13 @@
   text-align: center;
   max-height: 100px;
 }
+
+.main-header__second-page img {
+  height: 100px;
+}
+
+@media (min-width: $desktop) {
+  .main-header .main-header__logo {
+    max-width: 21%;
+  }
+}

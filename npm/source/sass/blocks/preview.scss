@@ -36,8 +36,23 @@
   margin: 0;
 }
 
-.preview__link {
+.preview__btn {
+  position: relative;
   margin-top: 30px;
+}
+
+.preview__btn i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $mainColor;
+  font-size: 12px;
+  transition: color .3s;
+}
+
+.preview__btn:hover i {
+  color: #fff;
 }
 
 .preview .preview__link-ask {

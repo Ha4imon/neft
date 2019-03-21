@@ -1,0 +1,56 @@
+.contacts {
+  background-color: darken($secondColor, 30%);
+  background-image: url(../img/contact-detail-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 20px;
+  margin-bottom: 50px
+}
+
+.contacts .title {
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.contacts p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+.contacts p i {
+  margin-right: 20px;
+  color: $secondColor;
+}
+
+
+.contacts p a {
+  color: #fff;
+
+  &:hover {
+    color: $secondColor;
+  }
+}
+
+
+.contacts .social-network__wrapper a {
+  background-color: #fff;
+  color: #888;
+  
+  &:hover {
+    color: $secondColor;
+  }
+}
+
+
+@media (min-width: $laptop) {
+  .contacts {
+    margin-bottom: 0;
+  }
+}
