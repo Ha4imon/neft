@@ -1,0 +1,43 @@
+.certificate {
+  padding-bottom: 50px;
+}
+
+.certificate__text > b {
+  display: block;
+  color: $mainColor;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.certificate__text  p {
+  color: $mainColor;
+  opacity: 0.9;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.certificate__slider-for {
+  margin-bottom: 50px;
+}
+
+.certificate__slider-for .slick-prev:before,
+.certificate__slider-for .slick-next:before,
+.certificate__slider-nav .slick-prev:before,
+.certificate__slider-nav .slick-next:before {
+  color: $secondColor;
+}
+.certificate__slider-nav div {
+  outline: none;
+  border: 1px solid transparent;
+
+
+  &:focus {
+    border: 1px solid $secondColor;
+  }
+}
+
+.certificate__wrapper img {
+  margin: 0 auto;
+}

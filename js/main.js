@@ -16,6 +16,8 @@
       infinite: true,
       slidesToShow: 2,
       slidesToScroll: 2,
+      autoplay: true,
+      autoplaySpeed: 6000,
       responsive: [
         {
           breakpoint: 992,
@@ -36,6 +38,8 @@
       slidesToShow: 5,
       slidesToScroll: 5,
       arrows: false,
+      autoplay: true,
+      autoplaySpeed: 3000,
       responsive: [
         {
           breakpoint: 992,
@@ -60,6 +64,8 @@
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 3,
+      autoplay: true,
+      autoplaySpeed: 6000,
       responsive: [
         {
           breakpoint: 992,
@@ -71,5 +77,30 @@
         }
       ]
     });
+  });
+
+
+  $('.certificate__slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    asNavFor: '.certificate__slider-nav',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false
+        }
+        }
+      ]
+  });
+  $('.certificate__slider-nav').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.certificate__slider-for',
+    arrows: false,
+    centerMode: true,
+    focusOnSelect: true
   });
 })();

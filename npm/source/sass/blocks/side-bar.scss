@@ -1,4 +1,4 @@
-.service-list .title {
+.side-bar .title {
   display: block;
   color: $mainColor;
   font-size: 17px;
@@ -8,16 +8,16 @@
 }
 
 
-.service-list ul {
+.side-bar ul {
   list-style: none;
   padding: 0;
 }
 
-.service-list ul li:last-child a {
+.side-bar ul li:last-child a {
   border-bottom: none;
 }
 
-.service-list ul li a {
+.side-bar ul li a {
   display: block;
   border-left: 1px solid #ddd;
   border-bottom: 1px solid #ddd;

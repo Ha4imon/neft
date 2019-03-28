@@ -17,20 +17,8 @@
 }
 
 .reviews-home__item {
-  flex-direction: column;
-  flex: 0 0 100%;
+  outline: none;
   padding: 0 15px;
-}
-
-.reviews-home .carousel__control {
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 100%;
-
-  &::before {
-    content: none
-  }
 }
 
 .reviews-home__img {
@@ -58,10 +46,4 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-}
-
-@media (min-width: $laptop) {
-  .reviews-home__item {
-    flex: 0 0 50%;
-  }
 }

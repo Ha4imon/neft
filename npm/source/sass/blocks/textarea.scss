@@ -2,7 +2,9 @@
   border: 1px solid #ddd;
   font-family: inherit;
   resize: none;
+  outline: none;
   padding: 15px;
+  transition: border-color .3s;
 
   &:focus {
     border-color: $secondColor;

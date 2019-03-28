@@ -1,0 +1,25 @@
+.about-us {
+  margin-bottom: 50px;
+}
+.about-us__text > p {
+  color: $mainColor;
+  opacity: 0.9;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-us__text span {
+  color: $secondColor;
+}
+
+.about-us__text a {
+  color: $secondColor;
+}
+
+.about-us__text p:last-child {
+  margin-top: 30px;
+  margin-bottom: 0;
+  text-align: center;
+}
