@@ -103,4 +103,25 @@
     centerMode: true,
     focusOnSelect: true
   });
+  
+  
+  
+  $(document).ready(function () {
+    $('.pagination-projects').slick({
+      infinite: true,
+      slidesToShow: 10,
+      slidesToScroll: 10,
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            arrows: false
+          }
+        }
+      ]
+    });
+  });
 })();

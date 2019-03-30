@@ -1,0 +1,59 @@
+.projects {
+  padding-bottom: 50px;
+}
+
+.projects__text b {
+  display: block;
+  color: $mainColor;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.projects__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.projects__table th {
+  border-top: 2px solid $secondColor;
+  border-bottom: 2px solid $secondColor;
+  color: $mainColor;
+  padding: 10px 0;
+}
+
+.projects__table tr:nth-child(2n) {
+  background-color: #f1f1f1;
+
+}
+
+.projects__table th {
+  padding: 15px 0;
+}
+
+.projects__table td {
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.projects__table td:first-child {
+  min-width: 200px;
+}
+
+.projects__table td a {
+  color: $mainColor;
+  text-decoration: none;
+}
+
+.projects__item--display {
+  display: none;
+}
+
+
+@media (min-width: $laptop) {
+  .projects__item--display {
+    display: table-cell;
+  }
+  .projects__table td {
+    padding: 15px;
+  }
+}

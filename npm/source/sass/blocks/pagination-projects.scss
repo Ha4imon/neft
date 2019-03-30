@@ -1,0 +1,36 @@
+.pagination-projects a {
+  position: relative;
+  color: $mainColor;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  padding: 10px 0;
+
+  &:hover, 
+  &:focus {
+    color: $secondColor;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1px;
+    height: 100%;
+    width: 2px;
+    transform: rotate(90deg);
+    background-color: $secondColor;
+  }
+  
+  &:last-child::before {
+    content: none;
+  }
+  
+}
+
+.pagination-projects .slick-prev::before,
+.pagination-projects .slick-next::before {
+  color: $secondColor;
+}

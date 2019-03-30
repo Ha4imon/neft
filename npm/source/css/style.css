@@ -964,10 +964,10 @@ html {
 .certificate__slider-for {
   margin-bottom: 50px; }
 
-.certificate__slider-for .slick-prev:before,
-.certificate__slider-for .slick-next:before,
-.certificate__slider-nav .slick-prev:before,
-.certificate__slider-nav .slick-next:before {
+.certificate__slider-for .slick-prev::before,
+.certificate__slider-for .slick-next::before,
+.certificate__slider-nav .slick-prev::before,
+.certificate__slider-nav .slick-next::before {
   color: #01B9E6; }
 
 .certificate__slider-nav div {
@@ -978,6 +978,73 @@ html {
 
 .certificate__wrapper img {
   margin: 0 auto; }
+
+.projects {
+  padding-bottom: 50px; }
+
+.projects__text b {
+  display: block;
+  color: #454545;
+  font-size: 24px;
+  margin-bottom: 30px; }
+
+.projects__table {
+  border-collapse: collapse;
+  width: 100%; }
+
+.projects__table th {
+  border-top: 2px solid #01B9E6;
+  border-bottom: 2px solid #01B9E6;
+  color: #454545;
+  padding: 10px 0; }
+
+.projects__table tr:nth-child(2n) {
+  background-color: #f1f1f1; }
+
+.projects__table th {
+  padding: 15px 0; }
+
+.projects__table td {
+  padding: 30px 15px;
+  text-align: center; }
+
+.projects__table td:first-child {
+  min-width: 200px; }
+
+.projects__table td a {
+  color: #454545;
+  text-decoration: none; }
+
+.projects__item--display {
+  display: none; }
+
+.pagination-projects a {
+  position: relative;
+  color: #454545;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  padding: 10px 0; }
+  .pagination-projects a:hover, .pagination-projects a:focus {
+    color: #01B9E6; }
+  .pagination-projects a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1px;
+    height: 100%;
+    width: 2px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    background-color: #01B9E6; }
+  .pagination-projects a:last-child::before {
+    content: none; }
+
+.pagination-projects .slick-prev::before,
+.pagination-projects .slick-next::before {
+  color: #01B9E6; }
 
 @media (min-width: 576px) {
   .container {
@@ -1250,7 +1317,11 @@ html {
     height: auto;
     padding: 0 15px; }
   .contacts {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .projects__item--display {
+    display: table-cell; }
+  .projects__table td {
+    padding: 15px; } }
 
 @media (min-width: 1200px) {
   .container {

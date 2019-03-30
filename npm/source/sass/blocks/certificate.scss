@@ -22,10 +22,10 @@
   margin-bottom: 50px;
 }
 
-.certificate__slider-for .slick-prev:before,
-.certificate__slider-for .slick-next:before,
-.certificate__slider-nav .slick-prev:before,
-.certificate__slider-nav .slick-next:before {
+.certificate__slider-for .slick-prev::before,
+.certificate__slider-for .slick-next::before,
+.certificate__slider-nav .slick-prev::before,
+.certificate__slider-nav .slick-next::before {
   color: $secondColor;
 }
 .certificate__slider-nav div {
